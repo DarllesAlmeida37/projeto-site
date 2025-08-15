@@ -8,15 +8,47 @@
 <body>
     <header>
         <nav>
-            <a href="">Entrar</a>
+            <a href="">Home</a>
+            <a href="">Destaques</a>
             <a href="">Contato</a>
-            <a href="">SAC</a>
         </nav>
     </header>
-    <main>
-        <section></section>
-        <section></section>
-        <section></section>
+    <main id="mainContainer">
+        <section>
+            <!-- Esse seção vai coletar os dados do usuário! -->
+            <div id="sectionContainer">
+                <h1>
+                    Digite seus dados para continuar
+                </h1>
+                <form>
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email">
+                </form> 
+            </div>
+        </section>
+        <section>
+            <!-- Essa seção vai ser o campo de cursos disponíveis para o usuário acessar!-->
+             <div id="cursos">
+                <ol>
+                    <!-- Exemplos: -->
+                    <li>Curso1</li>
+                    <li>Curso1</li>
+                    <li>Curso1</li>
+                    <li>Curso1</li>
+                    <li>Curso1</li>
+                </ol>
+             </div>
+        </section>
+        <section>
+            <!-- Essa seção vai ser um campo na lateral da página para dúvidas, soluções ou curiosidades etc. -->
+             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Nesciunt voluptate deleniti laborum in sed vero, optio, enim distinctio ea sapiente cum, ad quae sunt. 
+                Et animi illo eligendi accusamus! 
+                Illum consectetur quos eligendi accusantium similique non ea sequi consequatur quidem.
+            </p>
+        </section>
     </main>
     <footer>
         <p>&copy;Darlles Almeida</p>
