@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Interativo</title>
+    <title>Cursos Grátis Youtube</title>
 </head>
 <body>
     <header>
+        <div id="logoSite">Logo Aqui</div>
         <nav>
             <a href="">Home</a>
             <a href="">Destaques</a>
@@ -18,8 +19,9 @@
             <!-- Esse seção vai coletar os dados do usuário! -->
             <div id="sectionContainer">
                 <h1>
-                    Digite seus dados para continuar
+                    Olá, seja muito bem vindo ao site - Cursos Grátis youtube!
                 </h1>
+                <h3>Escolha abaixo um curso e cadastre-se para assistir!</h3>
                 <form>
                     <label for="name">Nome:</label>
                     <input type="text" name="name" id="name">
@@ -30,16 +32,15 @@
         </section>
         <section>
             <!-- Essa seção vai ser o campo de cursos disponíveis para o usuário acessar!-->
-             <div id="cursos">
-                <ol>
+                <ol id="listaCursos">
                     <!-- Exemplos: -->
-                    <li>Curso1</li>
-                    <li>Curso1</li>
-                    <li>Curso1</li>
-                    <li>Curso1</li>
-                    <li>Curso1</li>
+                    <li class="curso" id="cursoC1">CURSO - HTML E CSS</li>
+                    <li class="curso">CURSO - REACT</li>
+                    <li class="curso">CURSO - JAVASCRIPT</li>
+                    <li class="curso">CURSO - PYTHON</li>
+                    <li class="curso">CURSO - ALGORÍTIMOS</li>
+<!-- Criar um addEventListener para cada 'li' dentro de listaCursos, quando o usuário clicar no link, vai abrir o formulário de cadastro. -->
                 </ol>
-             </div>
         </section>
         <section>
             <!-- Essa seção vai ser um campo na lateral da página para dúvidas, soluções ou curiosidades etc. -->
@@ -53,5 +54,14 @@
     <footer>
         <p>&copy;Darlles Almeida</p>
     </footer>
+    <script>
+    const cursoC1 = document.getElementById('cursoC1') 
+    cursoC1.addEventListener('click',()=>{
+        const inputc1 = document.createElement('input')
+        inputc1.type = 'text'
+        inputc1.placeholder = 'digite seu nome:'
+        cursoC1.appendChild(inputc1)
+    })
+    </script>
 </body>
 </html>
