@@ -1,0 +1,29 @@
+*{
+    box-sizing: 0;
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    height: 60px;
+    color: azure;
+    background-color: rgba(0, 0, 90, 0.856);
+}
+nav{
+    display: flex;
+    gap: 20px;
+}
+a{
+    color: #d1b972;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    border: 2px solid transparent;
+    border-radius: 7px;
+    padding: 2px 4px;
+}
+a:hover{
+    border-bottom: 2px solid #d1b972;
+}
