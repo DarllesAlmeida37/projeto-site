@@ -9,21 +9,49 @@ header{
     padding: 0px 20px;
     height: 60px;
     color: azure;
-    background-color: rgba(0, 0, 90, 0.856);
+    background-color: #04045af6;
 }
 nav{
     display: flex;
     gap: 20px;
 }
-a{
-    color: #d1b972;
+#seletorDestaque{
+    color: #d3be80;
+    font-size: 16px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    border-radius: 12px;
+    padding: 2px 10px;
+    background-color: #04045af6;
+}
+#seletorDestaque:hover{
+    background-color: #c4bd972d;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+option{
+    background-color: #04045af6;
+}
+a{
+    color: #d3be80;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
     text-decoration: none;
     border: 2px solid transparent;
-    border-radius: 7px;
-    padding: 2px 4px;
+    border-radius: 12px;
+    padding: 2px 10px;
 }
 a:hover{
-    border-bottom: 2px solid #d1b972;
+    background-color: #c4bd972d;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+mainContainer{
+    display: grid;
+}
+section{
+    background-color: #d3be80;
+    border: 2px solid blueviolet;
 }
