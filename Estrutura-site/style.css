@@ -9,7 +9,7 @@ header{
     padding: 0px 20px;
     height: 60px;
     color: azure;
-    background-color: #04045af6;
+    background-color: #040444;
 }
 nav{
     display: flex;
@@ -24,7 +24,7 @@ nav{
     border: none;
     border-radius: 12px;
     padding: 2px 10px;
-    background-color: #04045af6;
+    background-color: #040444;
 }
 #seletorDestaque:hover{
     background-color: #c4bd972d;
@@ -32,7 +32,7 @@ nav{
     transition: 0.2s;
 }
 option{
-    background-color: #04045af6;
+    background-color: #040444;
 }
 a{
     color: #d3be80;
@@ -48,10 +48,56 @@ a:hover{
     transform: scale(1.1);
     transition: 0.2s;
 }
-mainContainer{
+#mainContainer{
     display: grid;
+    grid-template-areas: 
+        "sectionTitulo sectionTitulo sectionTitulo"
+        "sectionMain sectionMain sectionLateral";
+}
+#sectionTitulo{
+    grid-area: sectionTitulo;
+}
+#sectionMain{
+    grid-area: sectionMain;
+}
+#sectionLateral{
+    grid-area: sectionLateral;
+    height: auto;
 }
 section{
-    background-color: #d3be80;
-    border: 2px solid blueviolet;
+    background-color: #fafafa;
+    border: 2px solid #ac965a;
+}
+h1{
+    text-align: center;
+    color: #040444; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 2rem 0rem;
+}
+h3{
+    text-align: center;
+    color: #c4a44d;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-bottom: 3rem;
+}
+#listaCursos{
+    padding: 2rem;
+    width: 150vh;
+    height: 45vh;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 3rem;
+}
+.curso{
+    color: #040441;
+    font-weight: 600;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+footer{
+    text-align: center;
+    height: 60px;
+    color: azure;
+    background-color: #030331;
 }
