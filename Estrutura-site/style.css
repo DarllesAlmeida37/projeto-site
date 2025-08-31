@@ -1,50 +1,36 @@
 *{
     box-sizing: 0;
     margin: 0;
+
+}
+body{
+    background-color: #01010a;
+    color: #239b0b;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0px 20px;
-    height: 60px;
-    color: azure;
-    background-color: #040444;
+    height: 150px;
 }
 nav{
     display: flex;
-    gap: 20px;
-}
-#seletorDestaque{
-    color: #cfb871;
-    font-size: 16px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
-    text-decoration: none;
-    border: none;
-    border-radius: 12px;
-    padding: 2px 10px;
-    background-color: #040444;
-}
-#seletorDestaque:hover{
-    background-color: #c4bd972d;
-    transform: scale(1.1);
-    transition: 0.2s;
-}
-option{
-    background-color: #040444;
+    gap: 40px;
+    margin-right: 100px;
 }
 a{
-    color: #cfb871;
+    color: #ffffff;
+    font-size: 18px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
     border: 2px solid transparent;
     border-radius: 12px;
     padding: 2px 10px;
 }
 a:hover{
-    background-color: #c4bd972d;
+    background-color: #a5b4a410;
     transform: scale(1.1);
     transition: 0.2s;
 }
@@ -59,24 +45,27 @@ a:hover{
 }
 #sectionMain{
     grid-area: sectionMain;
+    background-color: #ffffff;
 }
 #sectionLateral{
     grid-area: sectionLateral;
     height: auto;
 }
 section{
-    background-color: #fafafa;
-    border: 2px solid #ac965a;
+    border: 2px solid #239b0b;
 }
 h1{
     text-align: center;
-    color: #040444; 
+    color: #ffffff; 
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 2rem 0rem;
 }
+#textYoutube{
+    color: #9b1111;
+}
 h3{
     text-align: center;
-    color: #a57317;
+    color: #239b0b;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     margin-bottom: 3rem;
 }
@@ -89,7 +78,7 @@ h3{
 }
 img{
     border-radius: 7px;
-    box-shadow: 3px 3px 15px 3px #000000e0;
+    background-color: #01010a;
 }
 #listaCursos{
     padding: 2rem;
@@ -101,14 +90,19 @@ img{
     padding-left: 3rem;
 }
 .curso{
-    color: #040441;
+    color: #ffffff;
+    background-color: #01010a;
     font-weight: 600;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     cursor: pointer;
+    border: 3px solid #239b0b;
+    width: 20%;
+    border-radius: 8px;
+    padding: 10px;
+    list-style-type: none;
 }
 footer{
     text-align: center;
     height: 60px;
     color: azure;
-    background-color: #030331;
 }
